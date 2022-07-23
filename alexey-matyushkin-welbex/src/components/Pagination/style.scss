@@ -1,0 +1,23 @@
+.pagination{
+    display: flex;
+    margin-top: 20px;
+    width: 300px;
+    margin: 20px auto;
+    overflow-x: scroll;
+    font-size: 12px;
+    .pagination__item{
+        .pagination__btn{
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background: #fff;
+            display: block;
+            margin-right: 10px;
+            transition: background 0.25s ease-out;
+        }
+        .pagination__btn:hover{
+            background: rgb(174, 209, 78);
+            transition: background 0.25s ease-in;
+        }
+    }
+}
