@@ -125,7 +125,7 @@ function App() {
         {welbexRecords &&
           <div className='flex-container'>
             <div className="table-wrapper">
-              <PrimeTable welbexItems={[...welbexRecords].slice(firstRows * countPrintRows, firstRows * countPrintRows + 5)}/>
+              <PrimeTable welbexItems={[...welbexRecords].slice(firstRows * countPrintRows, firstRows * countPrintRows + countPrintRows)}/>
             </div>
             <div className='pagination-wrapper'>
               <Pagination arrayLenght={welbexRecords.length} paginateCallback={setfirstRows} countPrintRows={countPrintRows}/>
